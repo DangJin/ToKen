@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="CSS/bootstrap.3.3.7min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<style type="text/css">
+    .teamAppen-text{
+        position: absolute;
+        width: 100%;
+        top: 50px;
+        line-height: 36px;
+        font-size: 18px;
+        text-align: center;
+        color: #666;
+        font-family: STXingKai
+    }
+</style>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="TopMenu">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <a class="navbar-brand" href="index.html"><img class="img-responsive" src="image/111.png" alt=""></a>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-left: 120px">
+            <ul class="nav navbar-nav navbar-left">
+                <li class="hidden">
+                    <a href="index.html"></a>
+                </li>
+                <li class="page-scroll">
+                    <a href="introduce.html">公司简介</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="development.html">发展历程</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="teamappend.html">团队招募</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="service.html">客户服务</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+<div class="body-main col-md-12 col-xs-12">
+    <div class="col-md-2 col-xs-2"></div>
+    <div class="col-md-8 col-xs-8">
+        <div class="tittle-img">
+            <img src="image/service.jpg" alt="First slide">
+        </div>
+        <div class="col-md-12 col-xs-12" style="background-color: #fff">
+            <img src="image/teamAppend2.png" style="width: 100%"/>
+            <p class="teamAppen-text">
+                疯狂也好，人性也罢<br>
+                也许<br>
+                有人不看好你的初出茅庐、缺少经验<br>
+                但是<br>
+                我们选择相信年轻人<br>
+                曾经<br>
+                有人认为你好高骛远、异想天开<br>
+                其实<br>
+                这都是梦开始的地方<br>
+                如果<br>
+                你喜欢科技、热爱电子产品<br>
+                亦或<br>
+                熟悉媒体运营、掌握搞高策划<br>
+                那我们就是同一路人<br>
+                肯坚持、敢奋斗<br>
+                没有人会说你不懂规矩、不安本分<br>
+                寻你所想，做你所要<br>
+                梦想之船在拓克等你起航<br>
+            </p>
+        </div>
+    </div>
+    <div class="col-md-2 col-xs-2"></div>
+
+</div>
+
+<!--版权块-->
+<div id="foot" class="body-foot-white col-md-12 col-xs-12 visible-lg">
+    <div class="col-md-6 col-xs-6 service" style="margin-top: 30px">
+        <div class="col-md-3 col-xs-3"></div>
+        <div class="col-md-8 col-xs-8">
+            <div class="col-md-4 col-xs-4">
+                <h4>服务指南</h4>
+                <ul v-for="service in services" class="foot-service">
+                    <li><a href="#">{{service.message}}</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-xs-4">
+                <h4>售后服务</h4>
+                <ul v-for="Customer in Customers" class="foot-Customer">
+                    <li><a href="#">{{Customer.message}}</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-xs-4">
+                <h4>关注我们</h4>
+                <ul v-for="follow in follows" class="foot-follow">
+                    <li><a href="#">{{follow.message}}</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-xs-6 follow" style="margin-top: 30px">
+        <div class="col-md-4 col-xs-4">
+            <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-envelope" style="margin: -10px 5px 0 -5px"></span>在线客服</button>
+            <li>语音客服：{{foottel}}</li>
+            <li>工作时间：{{foottime}}</li>
+        </div>
+        <div class="col-md-5 col-xs-5">
+            <div class="code left" id="aaaa">
+                <img class="code-weibo" src="image/timg.jpg"/>
+                <img src="image/weixin.jpg"/>
+                <span>官方微博</span>
+            </div>
+            <div class="code right">
+                <img class="code-weixin" src="image/timg.jpg"/>
+                <img src="image/weixin.jpg"/>
+                <span>微信服务号</span>
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-3"></div>
+    </div>
+    <span class="copyright col-md-12 col-xs-12">粤ICP备12076188号-1粤ICP备12076188号-1</span>
+</div>
+</body>
+<script src="JS/vue.js"></script>
+<script type="text/javascript">
+    //    foot数据
+    var vm = new Vue({
+        el: '#foot',
+        data: {
+            services: [{
+                message: '新手指引'
+            }, {
+                message: '常见问题'
+            }, {
+                message: '服务条款'
+            }],
+            Customers: [{
+                message: '售后政策'
+            }, {
+                message: '售后流程'
+            }, {
+                message: '意见建议'
+            }],
+            follows: [{
+                message: '官方微博'
+            }, {
+                message: '官方淘宝'
+            }, {
+                message: '联系我们'
+            }],
+
+            foottel: '18523764526',
+            foottime: '工作日9:30-17:30',
+        }
+    });
+</script>
+</html>

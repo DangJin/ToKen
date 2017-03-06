@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="CSS/bootstrap.3.3.7min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<style type="text/css">
+    .introduce{
+        background-color: #fff;
+        height: 1000px;
+    }
+    .introduce div{
+        padding: 50px;
+    }
+    .introduce div img{
+        width: 100%;
+    }
+    .introduce div p{
+        width: 100%;
+        font-size: 16px;
+        text-indent: 32px;
+    }
+</style>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" id="TopMenu">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <a class="navbar-brand" href="index.html"><img class="img-responsive" src="image/111.png" alt=""></a>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-left: 120px">
+            <ul class="nav navbar-nav navbar-left">
+                <li class="hidden">
+                    <a href="index.html"></a>
+                </li>
+                <li class="page-scroll">
+                    <a href="introduce.html">公司简介</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="development.html">发展历程</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="teamappend.html">团队招募</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="service.html">客户服务</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+<div class="body-main col-md-12 col-xs-12">
+    <div class="col-md-2 col-xs-2"></div>
+    <div class="col-md-8 col-xs-8">
+        <div class="tittle-img">
+            <img src="image/service.jpg" alt="First slide">
+        </div>
+        <div class="col-md-12 col-xs-12 introduce">
+            <div class="col-md-5 col-xs-5">
+                <img src="image/example-slide-1.jpg">
+            </div>
+            <div class="col-md-7 col-xs-7">
+                <p>北京拓克网络科技有限公司（简称拓克科技），成立于2015年10月，是一家集科技产品定制、销售、测评维修、科技研发为一体的公司。团队根植诚信，致力于专业化，人性化服务，潜心为广大客户提供更优质的品牌服务。</p>
+            </div>
+            <div class="col-md-12 col-xs-12">
+                <p>拓克科技是通过新媒体与电子商务互动结合，以客户为导向，将更多的电子产品进行更深层的属性分类，我们努力为用户探求高性价比、实用且具有可玩性的电子科技产品，既满足用户的高端体验，又能解决实际需求。</p>
+                <p>高质量，优服务，追求性价比是拓克的团队理念。</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-md-2 col-xs-2"></div>
+
+</div>
+
+<!--版权块-->
+<div id="foot" class="body-foot-white col-md-12 col-xs-12 visible-lg">
+    <div class="col-md-6 col-xs-6 service" style="margin-top: 30px">
+        <div class="col-md-3 col-xs-3"></div>
+        <div class="col-md-8 col-xs-8">
+            <div class="col-md-4 col-xs-4">
+                <h4>服务指南</h4>
+                <ul v-for="service in services" class="foot-service">
+                    <li><a href="#">{{service.message}}</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-xs-4">
+                <h4>售后服务</h4>
+                <ul v-for="Customer in Customers" class="foot-Customer">
+                    <li><a href="#">{{Customer.message}}</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-xs-4">
+                <h4>关注我们</h4>
+                <ul v-for="follow in follows" class="foot-follow">
+                    <li><a href="#">{{follow.message}}</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-xs-6 follow" style="margin-top: 30px">
+        <div class="col-md-4 col-xs-4">
+            <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-envelope" style="margin: -10px 5px 0 -5px"></span>在线客服</button>
+            <li>语音客服：{{foottel}}</li>
+            <li>工作时间：{{foottime}}</li>
+        </div>
+        <div class="col-md-5 col-xs-5">
+            <div class="code left" id="aaaa">
+                <img class="code-weibo" src="image/timg.jpg"/>
+                <img src="image/weixin.jpg"/>
+                <span>官方微博</span>
+            </div>
+            <div class="code right">
+                <img class="code-weixin" src="image/timg.jpg"/>
+                <img src="image/weixin.jpg"/>
+                <span>微信服务号</span>
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-3"></div>
+    </div>
+    <span class="copyright col-md-12 col-xs-12">粤ICP备12076188号-1粤ICP备12076188号-1</span>
+</div>
+
+</body>
+<script src="JS/vue.js"></script>
+<script src="JS/jquery.2.1.1min.js"></script>
+<script src="JS/bootstrap.3.3.7min.js"></script>
+<script>
+    $("#aaaa").click(function () {
+        $(".code-weixin").css("display","block")
+    });
+    //    轮播图切换时间
+    $('.carousel').carousel({
+        interval: 4000
+    });
+    //    foot数据
+    var vm = new Vue({
+        el: '#foot',
+        data: {
+            services: [{
+                message: '新手指引'
+            }, {
+                message: '常见问题'
+            }, {
+                message: '服务条款'
+            }],
+            Customers: [{
+                message: '售后政策'
+            }, {
+                message: '售后流程'
+            }, {
+                message: '意见建议'
+            }],
+            follows: [{
+                message: '官方微博'
+            }, {
+                message: '官方淘宝'
+            }, {
+                message: '联系我们'
+            }],
+
+            foottel:'18523764526',
+            foottime:'工作日9:30-17:30'
+        }
+    });
+    //    var bodyWidth = document.body.clientWidth;
+
+    //    var TopMenu = new Vue({
+    //        el: '#TopMenu',
+    //        data: {
+    //            menus:[{name:'dsadsad'},{name:'dsadsad'},{name:'ffdsf'}]
+    //        }
+    //    })
+
+
+</script>
+</html>

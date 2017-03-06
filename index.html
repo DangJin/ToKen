@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="CSS/bootstrap.3.3.7min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" id="TopMenu">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <a class="navbar-brand" href="index.html"><img class="img-responsive" src="image/111.png" alt=""></a>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-left: 120px">
+            <ul class="nav navbar-nav navbar-left">
+                <li class="hidden">
+                    <a href="index.html"></a>
+                </li>
+                <li class="page-scroll">
+                    <a href="introduce.html">公司简介</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="development.html">发展历程</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="teamappend.html">团队招募</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="service.html">客户服务</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+<div class="body-main col-md-12 col-xs-12">
+    <!--&lt;!&ndash;轮播&ndash;&gt;-->
+    <!--<div id="myCarousel" class="carousel slide">-->
+    <!--&lt;!&ndash; 轮播（Carousel）指标 &ndash;&gt;-->
+    <!--&lt;!&ndash;<ol class="carousel-indicators">&ndash;&gt;-->
+    <!--&lt;!&ndash;<li data-target="#myCarousel" data-slide-to="0" class="active"></li>&ndash;&gt;-->
+    <!--&lt;!&ndash;<li data-target="#myCarousel" data-slide-to="1"></li>&ndash;&gt;-->
+    <!--&lt;!&ndash;<li data-target="#myCarousel" data-slide-to="2"></li>&ndash;&gt;-->
+    <!--&lt;!&ndash;</ol>&ndash;&gt;-->
+    <!--&lt;!&ndash; 轮播（Carousel）项目 &ndash;&gt;-->
+    <!--<div class="carousel-inner">-->
+    <!--<div class="item active">-->
+    <!--<img src="image/example-slide-1.jpg" alt="First slide">-->
+    <!--</div>-->
+    <!--<div class="item">-->
+    <!--<img src="image/example-slide-2.jpg" alt="Second slide">-->
+    <!--</div>-->
+    <!--<div class="item">-->
+    <!--<img src="image/example-slide-3.jpg" alt="Third slide">-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--&lt;!&ndash; 轮播（Carousel）导航 &ndash;&gt;-->
+    <!--&lt;!&ndash;<a class="carousel-control left" href="#myCarousel"&ndash;&gt;-->
+    <!--&lt;!&ndash;data-slide="prev">&lsaquo;</a>&ndash;&gt;-->
+    <!--&lt;!&ndash;<a class="carousel-control right" href="#myCarousel"&ndash;&gt;-->
+    <!--&lt;!&ndash;data-slide="next">&rsaquo;</a>&ndash;&gt;-->
+    <!--</div>-->
+
+    <div class="col-md-2 col-xs-2"></div>
+    <div class="col-md-8 col-xs-8">
+        <div class="tittle-img">
+            <img src="image/service.jpg" alt="First slide">
+        </div>
+        <div class="indexClasses">
+            <div class="indexClass1">
+                <h4>想用多久用多久</h4>
+                <span>部位后悔和过去买单，想退想换随你任性，退换机器不必再为后续分期偿还，想用多久用多久，TOKER可不是说着玩的！</span>
+            </div>
+            <div class="indexClass2">
+                <h4>分期支付</h4>
+                <span>支付宝“花呗”分期，不用再用整月工资充值信仰，享受科技是必须的，月月赤兔是不必的！</span>
+            </div>
+            <div class="indexClass3">
+                <h4>享用价值</h4>
+                <span>退换机器根据市场行情、外观情况、故障有无等多维度专业判定，TOKER两年来技术团队搞基无数</span>
+            </div>
+            <div class="indexClass4">
+                <h4>安全无忧</h4>
+                <span>想用服务是TOKER与支付宝合作推出，所有交易过程通过支付宝完成，安全无忧！</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2 col-xs-2"></div>
+</div>
+
+<!--版权块-->
+<div id="foot" class="body-foot col-md-12 col-xs-12 visible-lg">
+    <div class="col-md-6 col-xs-6 service" style="margin-top: 30px">
+        <div class="col-md-3 col-xs-3"></div>
+        <div class="col-md-8 col-xs-8">
+            <div class="col-md-4 col-xs-4">
+                <h4>服务指南</h4>
+                <ul v-for="service in services" class="foot-service">
+                    <li><a href="#">{{service.message}}</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-xs-4">
+                <h4>售后服务</h4>
+                <ul v-for="Customer in Customers" class="foot-Customer">
+                    <li><a href="#">{{Customer.message}}</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-xs-4">
+                <h4>关注我们</h4>
+                <ul v-for="follow in follows" class="foot-follow">
+                    <li><a href="#">{{follow.message}}</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-xs-6 follow" style="margin-top: 30px">
+        <div class="col-md-4 col-xs-4">
+            <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-envelope"
+                                                                style="margin: -10px 5px 0 -5px"></span>在线客服
+            </button>
+            <li>语音客服：{{foottel}}</li>
+            <li>工作时间：{{foottime}}</li>
+        </div>
+        <div class="col-md-5 col-xs-5">
+            <div class="code left">
+                <img class="code-weibo" src="image/timg.jpg"/>
+                <img src="image/weixin.jpg"/>
+                <span>官方微博</span>
+            </div>
+            <div class="code right">
+                <img class="code-weixin" src="image/timg.jpg"/>
+                <img src="image/weixin.jpg"/>
+                <span>微信服务号</span>
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-3"></div>
+    </div>
+    <span class="copyright col-md-12 col-xs-12">粤ICP备12076188号-1粤ICP备12076188号-1</span>
+</div>
+
+</body>
+<script src="JS/vue.js"></script>
+<script src="JS/jquery.2.1.1min.js"></script>
+<script src="JS/bootstrap.3.3.7min.js"></script>
+<script>
+//    //    轮播图切换时间
+//    $('.carousel').carousel({
+//        interval: 4000
+//    });
+
+    //    foot数据
+    var vm = new Vue({
+        el: '#foot',
+        data: {
+            services: [{
+                message: '新手指引'
+            }, {
+                message: '常见问题'
+            }, {
+                message: '服务条款'
+            }],
+            Customers: [{
+                message: '售后政策'
+            }, {
+                message: '售后流程'
+            }, {
+                message: '意见建议'
+            }],
+            follows: [{
+                message: '官方微博'
+            }, {
+                message: '官方淘宝'
+            }, {
+                message: '联系我们'
+            }],
+
+            foottel: '18523764526',
+            foottime: '工作日9:30-17:30'
+        }
+    });
+
+</script>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="CSS/bootstrap.3.3.7min.css">
+    <link rel="stylesheet" href="CSS/cntl.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/development.css">
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" id="TopMenu">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <a class="navbar-brand" href="index.html"><img class="img-responsive" src="image/111.png" alt=""></a>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-left: 120px">
+            <ul class="nav navbar-nav navbar-left">
+                <li class="hidden">
+                    <a href="index.html"></a>
+                </li>
+                <li class="page-scroll">
+                    <a href="introduce.html">公司简介</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="development.html">发展历程</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="teamappend.html">团队招募</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="service.html">客户服务</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+<div class="body-main col-md-12 col-xs-12">
+    <div class="col-md-2 col-xs-2"></div>
+    <div class="col-md-8 col-xs-8">
+        <div class="tittle-img">
+            <img src="image/service.jpg" alt="First slide">
+        </div>
+    </div>
+    <div class="col-md-2 col-xs-2"></div>
+    <!--公司发展时间轴-->
+    <div class="cntl col-md-12 col-xs-12">
+			<span class="cntl-bar cntl-center">
+				<span class="cntl-bar-fill"></span>
+			</span>
+        <div class="col-md-2 col-xs-2"></div>
+        <div class="cntl-states col-md-8 col-xs-8">
+
+            <div class="cntl-state">
+                <div class="cntl-content">
+                    <h4>团队组建</h4>
+                    <p>TOKER创业团队组建，从事电子产品的销售、测评。</p>
+                </div>
+                <div class="cntl-image"><img src="image/develop1.jpg"></div>
+                <div class="cntl-icon cntl-center">2015.4</div>
+            </div>
+
+            <div class="cntl-state">
+                <div class="cntl-content">
+                    <h4>公司成立</h4>
+                    <p>北京拓克网络科技有限公司注册成功，注册资金100万。</p>
+                </div>
+
+                <div class="cntl-image"><img src="image/1.jpg"></div>
+                <div class="cntl-icon cntl-center">2015.10</div>
+            </div>
+
+            <div class="cntl-state">
+                <div class="cntl-content">
+                    <h4>用户突破</h4>
+                    <p>拓克官方公众号和官方微博投入使用，累计粉丝超过5万，同月淘宝企业店试运营</p>
+                </div>
+
+                <div class="cntl-image"><img src="image/2.jpg"></div>
+                <div class="cntl-icon cntl-center">2015.12</div>
+            </div>
+
+            <div class="cntl-state">
+                <div class="cntl-content">
+                    <h4>签约上线</h4>
+                    <p>拓克科技首次与众筹网签约合作，TOKER自营产品于当月16日在众筹网上线。</p>
+                </div>
+
+                <div class="cntl-image"><img src="image/3.jpg"></div>
+                <div class="cntl-icon cntl-center">2016.9</div>
+            </div>
+
+            <div class="cntl-state">
+                <div class="cntl-content">
+                    <h4>迎接未来--！</h4>
+                    <p>拓克科技开展科技新媒体项目，并在今日头条、搜狐新闻、天天快报、IT之家等媒体平台进行资源投放。</p>
+                </div>
+
+                <div class="cntl-image"><img src="image/4.jpg"></div>
+                <div class="cntl-icon cntl-center">2016.10</div>
+            </div>
+        </div>
+        <div class="col-md-2 col-xs-2"></div>
+    </div>
+
+
+</div>
+
+<!--版权块-->
+<div id="foot" class="body-foot-white col-md-12 col-xs-12 visible-lg">
+    <div class="col-md-6 col-xs-6 service" style="margin-top: 30px">
+        <div class="col-md-3 col-xs-3"></div>
+        <div class="col-md-8 col-xs-8">
+            <div class="col-md-4 col-xs-4">
+                <h4>服务指南</h4>
+                <ul v-for="service in services" class="foot-service">
+                    <li><a href="#">{{service.message}}</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-xs-4">
+                <h4>售后服务</h4>
+                <ul v-for="Customer in Customers" class="foot-Customer">
+                    <li><a href="#">{{Customer.message}}</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-xs-4">
+                <h4>关注我们</h4>
+                <ul v-for="follow in follows" class="foot-follow">
+                    <li><a href="#">{{follow.message}}</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-xs-6 follow" style="margin-top: 30px">
+        <div class="col-md-4 col-xs-4">
+            <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-envelope" style="margin: -10px 5px 0 -5px"></span>在线客服</button>
+            <li>语音客服：{{foottel}}</li>
+            <li>工作时间：{{foottime}}</li>
+        </div>
+        <div class="col-md-5 col-xs-5">
+            <div class="code left" id="aaaa">
+                <img class="code-weibo" src="image/timg.jpg"/>
+                <img src="image/weixin.jpg"/>
+                <span>官方微博</span>
+            </div>
+            <div class="code right">
+                <img class="code-weixin" src="image/timg.jpg"/>
+                <img src="image/weixin.jpg"/>
+                <span>微信服务号</span>
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-3"></div>
+    </div>
+    <span class="copyright col-md-12 col-xs-12">粤ICP备12076188号-1粤ICP备12076188号-1</span>
+</div>
+</body>
+<script src="JS/vue.js"></script>
+<script src="JS/jquery.2.1.1min.js"></script>
+<script src="JS/jquery-1.11.0.min.js"></script>
+<script src="JS/jquery.cntl.js"></script>
+<script src="JS/bootstrap.3.3.7min.js"></script>
+<script type="text/javascript">
+    //时间轴显示距离
+    $(document).ready(function (e) {
+        $('.cntl').cntl({
+            revealbefore: 300,
+            anim_class: 'cntl-animate',
+            onreveal: function (e) {
+//                console.log(e);
+            }
+        });
+    });
+
+    //    foot数据
+    var vm = new Vue({
+        el: '#foot',
+        data: {
+            services: [{
+                message: '新手指引'
+            }, {
+                message: '常见问题'
+            }, {
+                message: '服务条款'
+            }],
+            Customers: [{
+                message: '售后政策'
+            }, {
+                message: '售后流程'
+            }, {
+                message: '意见建议'
+            }],
+            follows: [{
+                message: '官方微博'
+            }, {
+                message: '官方淘宝'
+            }, {
+                message: '联系我们'
+            }],
+
+            foottel: '18523764526',
+            foottime: '工作日9:30-17:30',
+        }
+    });
+</script>
+</html>

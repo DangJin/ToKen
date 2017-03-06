@@ -1,0 +1,172 @@
+body {
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+.serviceMenu {
+    height: auto;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .serviceMenu {
+        margin-top: -50px;
+    }
+}
+
+.serviceMenu ul li {
+    height: 140px;
+    background-color: #fff;
+}
+
+.serviceMenu ul li a {
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.serviceMenu ul li a:hover {
+    background-color: #fff;
+    box-shadow: #eee 0 0 10px;
+}
+
+.serviceMenu-icon span {
+    display: block;
+    width: 100%;
+    height: 40px;
+    color: #666;
+    font-size: 18px;
+    text-align: center;
+}
+
+.serviceMenu-icon1 {
+    width: 36%;
+    height: 80px;
+    margin-left: 32%;
+    background: url("../image/img_13c0223a_service_icon2.png") no-repeat 10px 0;
+}
+
+.serviceMenu-icon2 {
+    width: 36%;
+    height: 80px;
+    margin-left: 32%;
+    background: url("../image/img_13c0223a_service_icon2.png") no-repeat -60px 0;
+}
+
+.serviceMenu-icon3 {
+    width: 36%;
+    height: 80px;
+    margin-left: 32%;
+    background: url("../image/img_13c0223a_service_icon2.png") no-repeat -135px 0;
+}
+
+.serviceMenu-icon4 {
+    width: 36%;
+    height: 80px;
+    margin-left: 32%;
+    background: url("../image/img_13c0223a_service_icon2.png") no-repeat -280px 0;
+}
+
+.tab-content {
+    margin-top: 20px;
+}
+
+.tab-pane {
+    height: auto;
+    padding: 10%;
+    background-color: #fff;
+}
+
+.onlineservice {
+    float: left;
+    width: 38%;
+    height: 320px;
+    margin-left: 8%;
+    background-color: #fff;
+    border: solid 1px #dddddd;
+    border-radius: 6px;
+}
+
+.onlineservice:link, .emailservice:link {
+    text-decoration: none;
+}
+
+.onlineservice:hover, .emailservice:hover {
+    border-color: #0fae6f;
+}
+
+.emailservice {
+    float: right;
+    width: 38%;
+    height: 320px;
+    margin-right: 8%;
+    background-color: #fff;
+    border: solid 1px #dddddd;
+    border-radius: 6px;
+}
+
+.onlineservice div {
+    width: 28%;
+    height: 70px;
+    margin-top: 20px;
+    margin-left: 36%;
+    background: url("../image/img_13c0223a_service_icon2.png") no-repeat -60px 0;
+}
+
+.emailservice div {
+    width: 28%;
+    height: 70px;
+    margin-top: 20px;
+    margin-left: 36%;
+    background: url("../image/img_13c0223a_service_icon2.png") no-repeat -60px 0;
+}
+
+.onlineservice .span1, .emailservice .span1 {
+    display: block;
+    width: 100%;
+    height: 50px;
+    color: #555;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.onlineservice .span2, .emailservice .span2 {
+    display: block;
+    width: 100%;
+    height: 30px;
+    color: #333;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.onlineservice .span3, .emailservice .span3 {
+    display: block;
+    width: 40%;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 30%;
+    line-height: 40px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #0fae6f;
+    border: solid 1px #0fae6f;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.onlineservice .span4, .emailservice .span4 {
+    display: block;
+    width: 100%;
+    height: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #8f8f8f;
+}

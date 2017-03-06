@@ -1,0 +1,83 @@
+
+.carousel-inner{
+    height: 500px;
+}
+.carousel-inner img{
+    width: 100%;
+    height: 100%;
+}
+.indexClasses{
+    width: 100%;
+}
+.indexClass1,.indexClass2,.indexClass3,.indexClass4{
+    width: 100%;
+    height: 280px;
+    margin-top: 20px;
+    padding: 50px;
+    background-color: #fff;
+}
+.indexClass1{
+    background: url("../image/example-slide-1.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.indexClass2{
+    background: url("../image/example-slide-2.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.indexClass3{
+    background: url("../image/example-slide-3.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.indexClass4{
+    background: url("../image/example-slide-4.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.indexClass1 h4,.indexClass2 h4,.indexClass3 h4,.indexClass4 h4{
+    position: relative;
+    top:70px;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 26px;
+    text-align: center;
+    color: #0fae6f;
+}
+.indexClass1 span,.indexClass2 span,.indexClass3 span,.indexClass4 span{
+    display: block;
+    position: relative;
+    top:70px;
+    width: 100%;
+    line-height: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .indexClass1,.indexClass2,.indexClass3,.indexClass4{
+        height: 160px;
+        margin-top: 20px;
+        padding: 20px;
+        background-color: #fff;
+    }
+    .indexClass1 h4,.indexClass2 h4,.indexClass3 h4,.indexClass4 h4{
+        position: relative;
+        top:45px;
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        color: #0fae6f;
+    }
+    .indexClass1 span,.indexClass2 span,.indexClass3 span,.indexClass4 span{
+        display: block;
+        top:40px;
+        width: 100%;
+        line-height: 15px;
+        font-size: 12px;
+        text-align: center;
+        color: #666;
+    }
+}

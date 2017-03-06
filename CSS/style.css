@@ -1,0 +1,274 @@
+body{
+    background-color: #f6f6f6;
+    font-family: Microsoft YaHei;
+}
+li{
+    list-style: none;
+}
+a:hover{
+    text-decoration: none;
+}
+.body-main{
+    margin: 0;
+    padding: 0;
+    top:60px;
+}
+.navbar{
+    height: 60px;
+    background-color: #221f1f;
+    padding-left: 5%;
+}
+.navbar .container{
+    width: 100%;
+    font-size: 16px;
+    background-color: #221f1f;
+}
+.navbar-brand{
+    position: absolute;
+    width: 140px;
+    height: 60px;
+    padding: 0;
+}
+.navbar-brand img{
+    width: 140px;
+    height: 58px;
+}
+@media (max-width: 768px) {
+    .navbar-brand{
+        margin-top:-50px;
+    }
+}
+
+.navbar-left li{
+    text-align: right;
+}
+
+.navbar-default .navbar-nav li a{
+    color: #888;
+}
+.navbar-default .navbar-nav li:hover>a{
+    color: #eee;
+}
+.tittle-img{
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.tittle-img img{
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .tittle-img img{
+        height:180px;
+    }
+}
+
+/*版权快黑*/
+.body-foot {
+    height: auto;
+    margin-top: 150px;
+    background-color: #111111;
+}
+
+.body-foot h4 {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.body-foot .service li{
+    width: 100%;
+    height: 20px;
+    color: #999;
+    font-size: 1em;
+    margin-left: 6%;
+}
+.body-foot .service li a{
+     color: #999;
+}
+.body-foot .service li a:hover{
+      color: #fff;
+}
+
+.body-foot .follow button {
+    width: 40%;
+    margin-top: 40px;
+    margin-left: 30%;
+    margin-bottom: 15px;
+}
+
+.body-foot .follow li {
+    width: 100%;
+    margin-top: 5px;
+    color: #999;
+    font-size: 1.2em;
+    text-indent: 5%;
+}
+.body-foot .follow button span{
+    margin: -10px 5px 0 -5px;
+}
+.body-foot .code img {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.body-foot .code span {
+    display: block;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+.body-foot .code.left {
+    float: left;
+    width: 30%;
+    height: 150px;
+    margin-top: 10px;
+    margin-left: 10%;
+}
+.body-foot .code.left:hover >.code-weibo{
+    position: fixed;
+    width: 10%;
+    top:340px;
+    left: 45%;
+    transform: scale(4,4);
+    transition: .3s transform;
+}
+
+.body-foot .code.right {
+    float: right;
+    width: 30%;
+    height: 150px;
+    margin-top: 10px;
+    margin-right: 15%;
+}
+.code-weixin,.code-weibo{
+    position: absolute;
+    top:-5000px;
+}
+.body-foot .code.right:hover >.code-weixin{
+     position: fixed;
+     width: 10%;
+     top:340px;
+     left: 45%;
+     transform: scale(4,4);
+     transition: .3s transform;
+}
+
+.body-foot .copyright {
+    float: left;
+    color: #999;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/*版权快白*/
+.body-foot-white {
+    height: auto;
+    margin-top: 150px;
+    background-color: #fff;
+}
+
+.body-foot-white h4 {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: #111;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.body-foot-white .service li{
+    width: 100%;
+    height: 20px;
+    color: #222;
+    font-size: 1em;
+    margin-left: 6%;
+}
+.body-foot-white .service li a{
+    color: #444;
+}
+.body-foot-white .service li a:hover{
+    color: #111;
+}
+
+.body-foot-white .follow button {
+    width: 40%;
+    margin-top: 40px;
+    margin-left: 30%;
+    margin-bottom: 15px;
+}
+
+.body-foot-white .follow li {
+    width: 100%;
+    margin-top: 5px;
+    color: #000;
+    font-size: 1.2em;
+    text-indent: 5%;
+}
+.body-foot-white .follow button span{
+    margin: -10px 5px 0 -5px;
+}
+.body-foot-white .code img {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.body-foot-white .code span {
+    display: block;
+    width: 100%;
+    color: #111;
+    text-align: center;
+}
+
+.body-foot-white .code.left {
+    float: left;
+    width: 30%;
+    height: 150px;
+    margin-top: 10px;
+    margin-left: 10%;
+}
+.body-foot-white .code.left:hover >.code-weibo{
+    position: fixed;
+    width: 10%;
+    top:340px;
+    left: 45%;
+    transform: scale(4,4);
+    transition: .3s transform;
+}
+
+.body-foot-white .code.right {
+    float: right;
+    width: 30%;
+    height: 150px;
+    margin-top: 10px;
+    margin-right: 15%;
+}
+.code-weixin,.code-weibo{
+    position: absolute;
+    top:-5000px;
+}
+.body-foot-white .code.right:hover >.code-weixin{
+    position: fixed;
+    width: 10%;
+    top:340px;
+    left: 45%;
+    transform: scale(4,4);
+    transition: .3s transform;
+}
+
+.body-foot-white .copyright {
+    float: left;
+    color: #333;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+}

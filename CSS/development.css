@@ -1,0 +1,9 @@
+.cntl{
+    position: relative;
+    margin-top: 100px;
+}
+@media (max-width: 768px) {
+    .cntl{
+        margin-top:0;
+    }
+}
